@@ -20,8 +20,8 @@ export async function POST(request: Request) {
   }
 
   // Refuse oversized bodies before buffering them.
-  const { maxFiles, maxSizeMb, allowedExt } = siteConfig.uploads;
-  const maxBytes = (maxFiles * maxSizeMb + 1) * 1024 * 1024;
+  const { maxFiles, maxSizeMb, maxTotalMb, allowedExt } = siteConfig.uploads;
+  const maxBytes = (maxTotalMb + 1) * 1024 * 1024;
   if (Number(request.headers.get("content-length") ?? 0) > maxBytes) return fail(413, "fileSize");
 
   let form: FormData;
@@ -61,6 +61,7 @@ export async function POST(request: Request) {
   if (files.length > 0 && !TYPES_WITH_FILES.includes(lead.type)) return fail(400, "fileType");
   if (files.length > maxFiles) return fail(400, "fileCount");
   if (files.some((file) => file.size > maxSizeMb * 1024 * 1024)) return fail(400, "fileSize");
+  if (files.reduce((sum, file) => sum + file.size, 0) > maxTotalMb * 1024 * 1024) return fail(400, "fileTotal");
   if (files.some((file) => !allowedExt.includes(extensionOf(file.name)))) return fail(400, "fileType");
 
   const savedKeys: string[] = [];

@@ -83,6 +83,8 @@ export const siteConfig = {
     dir: text(env.UPLOAD_DIR, "./storage"),
     maxFiles: int(env.UPLOAD_MAX_FILES, 5),
     maxSizeMb: int(env.UPLOAD_MAX_SIZE_MB, 15),
+    // Cap on all files of one submission together. Hosts with a small request-body limit (Vercel: 4.5 MB) need this.
+    maxTotalMb: int(env.UPLOAD_MAX_TOTAL_MB, int(env.UPLOAD_MAX_FILES, 5) * int(env.UPLOAD_MAX_SIZE_MB, 15)),
     allowedExt: list(text(env.UPLOAD_ALLOWED_EXT, "pdf,doc,docx,xls,xlsx,csv,dwg,dxf,zip,jpg,jpeg,png")).map((ext) =>
       ext.toLowerCase().replace(/^\./, ""),
     ),
@@ -118,6 +120,7 @@ export function getFormSettings() {
   return {
     maxFiles: siteConfig.uploads.maxFiles,
     maxSizeMb: siteConfig.uploads.maxSizeMb,
+    maxTotalMb: siteConfig.uploads.maxTotalMb,
     allowedExt: siteConfig.uploads.allowedExt,
     turnstileSiteKey: siteConfig.captcha.enabled ? siteConfig.captcha.siteKey : "",
     whatsapp: siteConfig.channels.whatsapp ? siteConfig.contact.whatsapp : "",

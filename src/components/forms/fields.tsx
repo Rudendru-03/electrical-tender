@@ -73,12 +73,14 @@ export function FileInput({
   const id = useId();
   const inputRef = useRef<HTMLInputElement>(null);
   const maxFiles = multiple ? settings.maxFiles : 1;
+  const totalIsTighter = settings.maxTotalMb < maxFiles * settings.maxSizeMb;
 
   function add(selected: FileList | null) {
     if (!selected) return;
     const next = multiple ? [...files, ...Array.from(selected)] : Array.from(selected).slice(0, 1);
     let problem: string | undefined;
     if (next.length > maxFiles) problem = "fileCount";
+    if (next.reduce((sum, file) => sum + file.size, 0) > settings.maxTotalMb * 1024 * 1024) problem = "fileTotal";
     if (next.some((file) => file.size > settings.maxSizeMb * 1024 * 1024)) problem = "fileSize";
     if (next.some((file) => !settings.allowedExt.includes(file.name.split(".").pop()?.toLowerCase() ?? ""))) {
       problem = "fileType";
@@ -103,10 +105,12 @@ export function FileInput({
         className="block w-full cursor-pointer rounded-md border border-dashed border-slate-300 bg-slate-50 text-sm text-slate-600 file:mr-3 file:cursor-pointer file:border-0 file:bg-brand-900 file:px-4 file:py-2.5 file:text-sm file:font-semibold file:text-white"
       />
       {error ? (
-        <p className="mt-1.5 text-xs text-red-600">{t(`errors.${error as "fileCount" | "fileSize" | "fileType"}`)}</p>
+        <p className="mt-1.5 text-xs text-red-600">{t(`errors.${error as "fileCount" | "fileSize" | "fileTotal" | "fileType"}`)}</p>
       ) : (
         <p className="mt-1.5 text-xs text-slate-500">
-          {t("filesHint", { maxFiles, maxSize: settings.maxSizeMb, types: settings.allowedExt.join(", ").toUpperCase() })}
+          {totalIsTighter
+            ? t("filesHintTotal", { maxFiles, maxTotal: settings.maxTotalMb, types: settings.allowedExt.join(", ").toUpperCase() })
+            : t("filesHint", { maxFiles, maxSize: settings.maxSizeMb, types: settings.allowedExt.join(", ").toUpperCase() })}
         </p>
       )}
       {files.length > 0 ? (
@@ -198,7 +202,7 @@ export function Honeypot({ value, onChange }: { value: string; onChange: (value:
 export function FormError({ error }: { error?: string }) {
   const t = useTranslations("form.errors");
   if (!error) return null;
-  const known = ["fileCount", "fileSize", "fileType", "captcha", "rateLimit", "generic"] as const;
+  const known = ["fileCount", "fileSize", "fileTotal", "fileType", "captcha", "rateLimit", "generic"] as const;
   const key = error === "validation" ? "fix" : (known.find((item) => item === error) ?? "generic");
   return (
     <p role="alert" className="rounded-md border border-red-200 bg-red-50 px-3 py-2.5 text-sm text-red-700">

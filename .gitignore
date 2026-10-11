@@ -48,6 +48,6 @@ next-env.d.ts
 # uploaded files
 /storage
 
-/.agent
+/.agents
 /.windsurf
 /.claude/skills
