@@ -1,0 +1,385 @@
+{
+  "meta": {
+    "titleSuffix": "Electrical Contractor",
+    "description": "{name} is a licensed electrical contractor taking up HT/LT installation, substation, panel, lighting, solar and maintenance works on tender and contract basis for government, industrial, commercial and residential clients."
+  },
+  "cta": {
+    "sendTender": "Send a tender / RFQ",
+    "getQuote": "Get a quote",
+    "callNow": "Call now",
+    "whatsapp": "WhatsApp us",
+    "bookVisit": "Book a site visit",
+    "requestCallback": "Request a callback",
+    "viewAll": "View all",
+    "learnMore": "Learn more",
+    "viewProject": "View project",
+    "readMore": "Read more",
+    "contactUs": "Contact us",
+    "viewCredentials": "View credentials",
+    "back": "Back"
+  },
+  "whatsapp": {
+    "general": "Hello {name}, I would like to discuss an electrical work requirement.",
+    "withReference": "Hello {name}, I have submitted an enquiry on your website. Reference: {reference}"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "sectors": "Sectors",
+    "projects": "Projects",
+    "credentials": "Credentials",
+    "clients": "Clients",
+    "tenders": "Tenders",
+    "careers": "Careers",
+    "blog": "Blog",
+    "contact": "Contact",
+    "quote": "Get a quote",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language"
+  },
+  "footer": {
+    "summary": "Licensed electrical contractor for tender and contract works: supply, installation, testing, commissioning and maintenance.",
+    "company": "Company",
+    "services": "Services",
+    "reach": "Reach us",
+    "follow": "Follow us",
+    "listings": "Find us on",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy policy",
+    "terms": "Terms of use"
+  },
+  "home": {
+    "eyebrow": "Licensed electrical contractor",
+    "title": "Electrical works on tender and contract, delivered safely and on schedule",
+    "text": "From HT/LT installation and substations to lighting, solar and annual maintenance, we take up complete electrical scope for government departments, industries, builders and institutions.",
+    "stats": {
+      "years": "Years in electrical contracting",
+      "projects": "Projects completed",
+      "clients": "Clients served",
+      "capacity": "Installed capacity"
+    },
+    "servicesTitle": "What we undertake",
+    "servicesText": "Complete electrical scope under one contractor: design support, supply, installation, testing and commissioning.",
+    "sectorsTitle": "Who we work for",
+    "sectorsText": "Each kind of client needs a different way of working. Pick yours to see how we handle it.",
+    "projectsTitle": "Recent projects",
+    "projectsText": "A selection of electrical works we have executed.",
+    "whyTitle": "Why clients award work to us",
+    "why": [
+      {
+        "title": "Licensed and compliant",
+        "text": "Valid contractor licence, statutory registrations and trained supervisors for every site."
+      },
+      {
+        "title": "Tender-ready documentation",
+        "text": "Pre-qualification papers, BOQ pricing and technical compliance prepared in the format you need."
+      },
+      {
+        "title": "Safety first",
+        "text": "Permit-to-work, PPE and tested equipment on site, with earthing and protection checked before energising."
+      },
+      {
+        "title": "One point of contact",
+        "text": "A named engineer for each work order, reachable on call, WhatsApp and email."
+      }
+    ],
+    "credentialsTitle": "Registrations and certifications",
+    "credentialsText": "Documents that tender committees and purchase teams ask for, kept current.",
+    "testimonialsTitle": "What clients say",
+    "ctaTitle": "Have a tender, BOQ or drawing ready?",
+    "ctaText": "Share it with us and get a reference number instantly. Our team reviews it and gets back to you."
+  },
+  "about": {
+    "title": "About us",
+    "intro": "{name} is an electrical contracting firm that executes electrical installation and maintenance works on tender and contract basis.",
+    "storyTitle": "What we do",
+    "story": [
+      "We take up electrical works from enquiry to handover: site survey, estimation, supply of material, installation, testing, commissioning and liaison with the electricity authorities where required.",
+      "Our clients include government departments and PSUs that award work through tenders, industries and commercial establishments that issue RFQs, builders who need complete electrification of their projects, and facilities that need a dependable maintenance partner."
+    ],
+    "valuesTitle": "How we work",
+    "values": [
+      { "title": "Clear scope", "text": "Every job starts with a written scope, BOQ and schedule agreed with the client." },
+      { "title": "Quality material", "text": "Approved makes as per specification, with test certificates handed over." },
+      { "title": "Qualified people", "text": "Licensed supervisors and wiremen, with engineers overseeing execution." },
+      { "title": "Proper handover", "text": "As-built drawings, test reports and completion documents at the end of the job." }
+    ],
+    "strengthTitle": "Our strength",
+    "strength": [
+      "Electrical engineers and licensed supervisors",
+      "Skilled wiremen, cable jointers and fitters",
+      "Testing instruments: insulation tester, earth tester, relay test kit, clamp meters",
+      "Tools and tackle for HT/LT cable laying and termination"
+    ]
+  },
+  "services": {
+    "title": "Services",
+    "intro": "Electrical works we undertake on tender, rate contract and turnkey basis.",
+    "includes": "Scope we cover",
+    "other": "Other services",
+    "ctaTitle": "Need this work done?",
+    "ctaText": "Send your requirement and our team will respond with a quotation."
+  },
+  "sectors": {
+    "title": "Sectors",
+    "offerTitle": "How we work with you",
+    "items": {
+      "government": {
+        "title": "Government and PSU",
+        "summary": "Tender works for departments, boards, municipal bodies and public sector units.",
+        "intro": "We participate in open and limited tenders and execute rate contracts for government bodies, following departmental specifications and schedules of rates.",
+        "points": [
+          "Pre-qualification documents kept ready: licence, registrations, turnover and work experience",
+          "Execution as per departmental specifications and approved makes",
+          "Measurement books, running bills and completion documents in the required format",
+          "Coordination with the electrical inspectorate and distribution company"
+        ]
+      },
+      "industrial": {
+        "title": "Industrial and commercial",
+        "summary": "Factories, warehouses, offices, hospitals, hotels and institutions.",
+        "intro": "For plants and commercial buildings we handle new installations, expansions and shutdown jobs, planned around your production and occupancy.",
+        "points": [
+          "HT/LT substations, transformers, panels and bus ducts",
+          "Cable laying, trays and power distribution up to the machine",
+          "Work planned around shutdown windows",
+          "Itemised quotation against your RFQ or BOQ"
+        ]
+      },
+      "builders": {
+        "title": "Builders and residential",
+        "summary": "Townships, apartment blocks, villas and commercial complexes.",
+        "intro": "We take complete electrification of real-estate projects, from the incoming supply to the last light point, in step with your civil schedule.",
+        "points": [
+          "Internal wiring, DBs, rising mains and meter panels",
+          "External electrification: street lighting, feeder pillars and cabling",
+          "DG backup, lifts and common-area power",
+          "Free site visit before estimation"
+        ]
+      },
+      "amc": {
+        "title": "AMC and maintenance",
+        "summary": "Annual maintenance contracts and breakdown support for existing installations.",
+        "intro": "Keep your electrical installation healthy with scheduled preventive maintenance and fast breakdown response.",
+        "points": [
+          "Preventive maintenance of transformers, panels and DG sets",
+          "Periodic testing: earthing, insulation resistance and relay checks",
+          "Breakdown attendance with a committed response time",
+          "Maintenance records and reports after every visit"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "intro": "Electrical works executed for clients across sectors.",
+    "all": "All",
+    "client": "Client",
+    "sector": "Sector",
+    "location": "Location",
+    "value": "Contract value",
+    "year": "Year",
+    "duration": "Duration",
+    "scope": "Scope of work",
+    "empty": "Projects will be listed here soon."
+  },
+  "credentials": {
+    "title": "Credentials",
+    "intro": "Licences, registrations and certifications held by {name}. Copies are shared with tender documents and on request.",
+    "number": "No.",
+    "issuer": "Issued by",
+    "validTill": "Valid till",
+    "view": "View document",
+    "onRequest": "Copy available on request",
+    "empty": "Credentials will be listed here soon.",
+    "requestTitle": "Need our pre-qualification documents?",
+    "requestText": "Tell us what you need and we will send the full set by email."
+  },
+  "clients": {
+    "title": "Clients and testimonials",
+    "intro": "Organisations that have trusted us with their electrical works.",
+    "empty": "Testimonials will be listed here soon."
+  },
+  "tenders": {
+    "title": "Tenders and RFQs",
+    "intro": "We take up electrical works on tender, RFQ and rate-contract basis. Send your tender documents and we will respond with our offer.",
+    "undertakeTitle": "Works we bid for",
+    "valueRange": "Contract value range",
+    "regions": "Regions we serve",
+    "processTitle": "How it works",
+    "process": [
+      { "title": "Submit", "text": "Share your requirement with BOQ, drawings or the tender document." },
+      { "title": "Review", "text": "Our estimation team studies the scope and raises queries if any." },
+      { "title": "Site visit", "text": "Where needed, an engineer visits the site before pricing." },
+      { "title": "Offer", "text": "You receive our techno-commercial offer within the due date." }
+    ],
+    "formTitle": "Submit your tender / RFQ",
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      {
+        "q": "Which documents should I upload?",
+        "a": "The tender document or RFQ, BOQ and drawings if available. PDF, Excel, Word, DWG and ZIP files are accepted."
+      },
+      {
+        "q": "How soon will you respond?",
+        "a": "You get a reference number immediately. Our team normally reverts within two working days, or earlier if the due date is close."
+      },
+      {
+        "q": "Do you take supply-only or labour-only contracts?",
+        "a": "Yes. We take turnkey, supply-and-installation and labour-rate contracts depending on the tender conditions."
+      },
+      {
+        "q": "Can you share your pre-qualification documents?",
+        "a": "Yes. Mention it in the message and we will email the licence, registrations and experience certificates."
+      }
+    ]
+  },
+  "quote": {
+    "title": "Get a quote",
+    "intro": "Choose what suits you. Every request gets a reference number.",
+    "tabs": {
+      "QUOTE": "Quick quote",
+      "SITE_VISIT": "Book a site visit",
+      "CALLBACK": "Request a callback"
+    },
+    "tenderHint": "Have tender documents or a detailed BOQ?",
+    "tenderLink": "Use the tender / RFQ form"
+  },
+  "careers": {
+    "title": "Careers",
+    "intro": "Work with us on electrical projects across sectors.",
+    "openings": "Current openings",
+    "empty": "There are no openings right now. You can still send your resume.",
+    "experience": "Experience",
+    "applyTitle": "Apply",
+    "general": "General application"
+  },
+  "blog": {
+    "title": "Blog and resources",
+    "intro": "Notes on electrical safety, tenders and maintenance.",
+    "empty": "Articles will be published here soon.",
+    "publishedOn": "Published on {date}"
+  },
+  "contact": {
+    "title": "Contact us",
+    "intro": "Reach us on the channel you prefer. All enquiries are tracked with a reference number.",
+    "call": "Call",
+    "whatsapp": "WhatsApp",
+    "whatsappText": "Chat with us",
+    "salesEmail": "Sales and quotations",
+    "tendersEmail": "Tenders and RFQs",
+    "careersEmail": "Careers",
+    "address": "Office",
+    "hours": "Working hours",
+    "formTitle": "Send a message",
+    "social": "Social media",
+    "listings": "Business listings"
+  },
+  "form": {
+    "steps": {
+      "organisation": "Your details",
+      "work": "Work details",
+      "documents": "Documents",
+      "review": "Review"
+    },
+    "name": "Your name",
+    "organisation": "Organisation / department",
+    "clientType": "You are",
+    "clientTypes": {
+      "GOVERNMENT": "Government / PSU",
+      "PRIVATE": "Private industrial / commercial",
+      "BUILDER": "Builder / residential",
+      "AMC": "AMC / maintenance customer",
+      "OTHER": "Other"
+    },
+    "email": "Email",
+    "phone": "Phone",
+    "city": "City / site location",
+    "state": "State",
+    "workType": "Type of work",
+    "workTypeOther": "Other electrical work",
+    "estimatedValue": "Estimated value",
+    "values": ["Below ₹5 lakh", "₹5 – 25 lakh", "₹25 lakh – 1 crore", "₹1 – 5 crore", "Above ₹5 crore", "Not sure"],
+    "deadline": "Submission due date",
+    "preferredVisit": "Preferred date and time for visit",
+    "preferredCall": "Preferred time for call",
+    "position": "Position",
+    "message": "Message",
+    "tenderMessage": "Scope of work / notes",
+    "files": "Attach files",
+    "resume": "Resume",
+    "filesHint": "Up to {maxFiles} files, {maxSize} MB each. Allowed: {types}",
+    "select": "Select",
+    "optional": "optional",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "submitting": "Submitting…",
+    "notProvided": "Not provided",
+    "noFiles": "No files attached",
+    "consent": "By submitting you agree to be contacted about this enquiry.",
+    "successTitle": "Request received",
+    "successText": "Thank you. Please note your reference number for follow-up.",
+    "successReference": "Reference number",
+    "successEmail": "An acknowledgement has been sent to your email.",
+    "continueWhatsapp": "Continue on WhatsApp",
+    "another": "Submit another request",
+    "errors": {
+      "required": "This field is required",
+      "email": "Enter a valid email address",
+      "phone": "Enter a valid phone number",
+      "invalid": "Enter a valid value",
+      "fileCount": "Too many files attached",
+      "fileSize": "A file is larger than the allowed size",
+      "fileType": "A file type is not allowed",
+      "captcha": "Please complete the verification",
+      "rateLimit": "Too many requests. Please try again in a few minutes.",
+      "generic": "Something went wrong. Please try again or contact us directly.",
+      "fix": "Please check the highlighted fields."
+    }
+  },
+  "legal": {
+    "privacyTitle": "Privacy policy",
+    "termsTitle": "Terms of use",
+    "notice": "This is a starting template. Have it reviewed before going live.",
+    "privacy": [
+      {
+        "title": "What we collect",
+        "text": "When you submit a form we collect the details you enter (name, organisation, phone, email, location, work requirement) and any documents you attach."
+      },
+      {
+        "title": "How we use it",
+        "text": "We use this information only to respond to your enquiry, prepare quotations and offers, and stay in touch about the work."
+      },
+      {
+        "title": "Sharing",
+        "text": "We do not sell your information. It is shared only with our staff and service providers (such as email and hosting) who need it to handle your enquiry."
+      },
+      {
+        "title": "Retention and your choices",
+        "text": "We keep enquiry records for our business and statutory needs. You can ask us to correct or delete your details by writing to us."
+      }
+    ],
+    "terms": [
+      {
+        "title": "Information on this site",
+        "text": "Content on this website is for general information about our services. It is not an offer; a binding scope and price are stated only in our written quotation or agreement."
+      },
+      {
+        "title": "Enquiries and documents",
+        "text": "By submitting an enquiry you confirm you are authorised to share the documents you upload. We treat tender and project documents as confidential."
+      },
+      {
+        "title": "Reference numbers",
+        "text": "A reference number confirms that we received your enquiry. It does not mean we have accepted the work."
+      }
+    ]
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you are looking for does not exist or has moved.",
+    "home": "Go to home page"
+  }
+}
